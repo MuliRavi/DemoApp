@@ -18,7 +18,7 @@ public class HelloWorldController {
 		
 		
 	}
-	@GetMapping(path="/hello-workd-bean/path-variable/{name}")
+	@GetMapping(path="/hello-world-bean/path-variable/{name}")
 	public HelloWorldBean HelloWorldPathVariable(@PathVariable String name) {
 		return new HelloWorldBean(String.format("Hello World, %s", name)) ;
 	}
